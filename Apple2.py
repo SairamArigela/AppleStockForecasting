@@ -78,7 +78,7 @@ st.write(df)
 
 
 fig =plt.figure(figsize=(16,8))
-plt.plot(df['Apple_Stock_Close_Value'], color='orange',label='Forecasted Values')
+plt.plot(df['Apple_Stock_Close_Value'], color='blue',label='Forecasted Values')
 plt.title('Apple Stock Forecasting Results', fontsize=18)
 plt.ylabel('Forecasted Close Values', fontsize=14)
 plt.xlabel('Number of Forecasted Days', fontsize=14)
@@ -90,7 +90,7 @@ st.pyplot(fig)
 
 actualfig=plt.figure(figsize=(20,8))
 plt.plot(apple_stk.Close, color='red',label='Actual')
-plt.plot(df['Apple_Stock_Close_Value'], color='orange',label='Forecasted Values')
+plt.plot(df['Apple_Stock_Close_Value'], color='blue',label='Forecasted Values')
 plt.title('apple stock forecasted close value with actual close value', fontsize=16)
 plt.ylabel('Close', fontsize=16)
 plt.legend()
