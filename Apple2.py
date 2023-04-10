@@ -13,7 +13,7 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing
 from pickle import dump
 from pickle import load
 
-apple_stk=pd.read_csv("C:\\Users\\Siva\\Desktop\\ExcelR\\Project\\AAPL.csv")
+apple_stk=pd.read_csv("AAPL.csv")
 
 a = apple_stk
 size = int(len(a) * 0.75)
@@ -50,7 +50,7 @@ st.write(Days)
 
 import pickle
 
-with open(file='C:\\Users\\Siva\\Desktop\\ExcelR\\Project\\final_model.sav',mode='rb') as f:
+with open(file='final_model.sav',mode='rb') as f:
     model = pickle.load(f)
     
  
